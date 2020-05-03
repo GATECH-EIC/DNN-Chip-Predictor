@@ -3,7 +3,7 @@ This is the official implemenatation of [DNN-Chip Predictor: An Analytical Perfo
 
 ## Publication
 
-If you use this github repo, please cite our [FPGA'20 paper](https://arxiv.org/abs/2001.03535):
+If you use this github repo, please cite:
 ```
 @inproceedings{zhao2020dnn,
 author = {Zhao, Yang and Li, Chaojian and Wang, Yue and Xu, Pengfei and Zhang, Yongan and Lin, Yingyan},
