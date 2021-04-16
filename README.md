@@ -1,7 +1,7 @@
 # DNN-Chip Predictor
 This is the official implemenatation of [DNN-Chip Predictor: An Analytical Performance Predictor for DNN Accelerators with Various Dataflows and Hardware Architectures [ICASSP'20]](https://arxiv.org/abs/2002.11270)
 
-## Example to predictor the enengy and latency given the operation
+## Example to predictor the enengy and latency given the operation on [Eyeriss](https://eyeriss.mit.edu/)
 
 ### Add your operation to the OPs_list in predictor.py
 > + "idx": the index of the operation in the operation set to be processed by predictor.py
