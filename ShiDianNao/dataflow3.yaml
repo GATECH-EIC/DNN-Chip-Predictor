@@ -1,0 +1,29 @@
+loop order:
+  dram: N,K
+  sram: W_refresh,K,I_refresh,Yo,Xo
+  noc: Xo,Yo
+  rf: O_refresh,C,R,S
+
+loop tiling:
+  dram:
+    N: 1
+    K: 16
+  sram:
+    K: 24
+    Yo: 1
+    Xo: 1
+  noc:
+    Xo:
+      mapping: W
+      value: 13
+    Yo:
+      mapping: H
+      value: 13
+  rf:
+    C: 256
+    R: 3
+    S: 3
+
+mininum refresh:
+  rf: true
+  sram: false

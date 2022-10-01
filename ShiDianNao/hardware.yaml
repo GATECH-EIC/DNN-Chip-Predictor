@@ -1,0 +1,63 @@
+dram:
+  unit energy (pJ/byte): 100.0
+
+sram:
+  allocation:
+    input I sram allocation: sram0
+    output O sram allocation: sram1
+    weight W sram allocation: sram0
+  sram0:
+    bw (byte/cycle): -1
+    size (byte): 262144
+    unit energy (pJ/byte): 3.0
+  sram1:
+    bw (byte/cycle): -1
+    size (byte): 1024
+    unit energy (pJ/byte): 0
+  sram2:
+    bw (byte/cycle): 0
+    size (byte): 0
+    unit energy (pJ/byte): 0
+
+noc:
+  H: 64
+  W: 8
+  forward:
+    bw (byte/cycle): -1
+    unit energy (pJ/byte): 0.1
+    input I: true
+    output O: false    
+    weight W: false
+  multicast:
+    bw (byte/cycle): -1
+    unit energy (pJ/byte): 1.0
+    input I: true
+    output O: false
+    weight W: true
+  unicast:
+    bw (byte/cycle): -1
+    unit energy (pJ/byte): 0.5
+    input I: true
+    output O: true    
+    weight W: true
+
+pe:
+  unit energy (pJ/multiplier): 1.0
+
+rf:
+  allocation:
+    input I rf allocation: rf0
+    output O rf allocation: rf1
+    weight W rf allocation: rf2
+  rf0:
+    bw (byte/cycle): -1
+    size (byte): 92
+    unit energy (pJ/byte): 0.1
+  rf1:
+    bw (byte/cycle): -1
+    size (byte): 3
+    unit energy (pJ/byte): 0.33
+  rf2:
+    bw (byte/cycle): -1
+    size (byte): 1
+    unit energy (pJ/byte): 0.1

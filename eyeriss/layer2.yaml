@@ -1,0 +1,12 @@
+batch size N: 4
+input channel C: 48
+output activation height Yo: 27
+output activation width Xo: 27
+output channel K: 256
+stride U: 1
+weight filter height R: 5
+weight filter width S: 5
+precision (bit):
+  activation Act: 16
+  partial sum Psum: 24
+  weight Wgt: 16
